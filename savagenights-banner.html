@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>savagenights</title>
+  <style>
+    body { margin: 0; background: #07080b; color: #f3ead7; }
+    .banner {
+      position: relative;
+      height: 420px;
+      background: #07080b url("banner.jpg") center / cover no-repeat;
+      overflow: hidden;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 40%, rgba(0,0,0,.72));
+      pointer-events: none;
+    }
+    .mark {
+      position: absolute;
+      left: 48px;
+      bottom: 42px;
+      z-index: 1;
+    }
+    .mark i {
+      display: block;
+      width: 92px;
+      height: 1px;
+      margin-bottom: 16px;
+      background: #c6a15b;
+    }
+    .mark strong {
+      display: block;
+      font: 64px/1 Georgia, serif;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    .mark span {
+      display: block;
+      margin-top: 10px;
+      color: #d7c4a3;
+      font: 18px/1 Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <div class="mark">
+      <i></i>
+      <strong>savagenights</strong>
+      <span>fablforge.com</span>
+    </div>
+  </header>
+</body>
+</html>
